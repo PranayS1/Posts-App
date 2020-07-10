@@ -23,18 +23,18 @@ app.use("/", express.static(path.join(__dirname, "angular")));
 
 // below CORS settings are not required while deploying app as single package for both frontend and backend
 
-// app.use((req, res, next) => {
-//     res.setHeader('Access-Control-Allow-Origin', '*');
-//     res.setHeader(
-//         'Access-Control-Allow-Headers',
-//         "Original, X-Requested-With, Content-Type, Accept, Authorization"
-//          );
-//     res.setHeader(
-//         'Access-Control-Allow-Methods',
-//         "GET, POST, PATCH, PUT, DELETE, OPTIONS"
-//         );
-//     next();
-// })
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        "Original, X-Requested-With, Content-Type, Accept, Authorization"
+         );
+    res.setHeader(
+        'Access-Control-Allow-Methods',
+        "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+        );
+    next();
+})
 
 app.use("/api/posts",postsRoutes);
 app.use("/api/user",userRoutes);
