@@ -1,0 +1,65 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+backend/angular/3rdpartylicenses.txt
+backend/angular/5-es5.5dce1187ff5099b823fe.js
+backend/angular/5-es2015.5dce1187ff5099b823fe.js
+backend/angular/favicon.ico
+backend/angular/index.html
+backend/angular/main-es5.f031443704432b211cb2.js
+backend/angular/main-es2015.f031443704432b211cb2.js
+backend/angular/polyfills-es5.3e8196928d184a6e5319.js
+backend/angular/polyfills-es2015.5b10b8fd823b6392f1fd.js
+backend/angular/runtime-es5.6d57790183c83aaa18f4.js
+backend/angular/runtime-es2015.6d57790183c83aaa18f4.js
+backend/angular/styles.43d38557efe99ce7cce9.css
+<<<<<<< HEAD
+/backend/angular
+/backend/node-angular.zip
+/nodemon.json
+=======
+nodemon.json
+>>>>>>> 3f69beca4b5ff403b0b55f6f1c53dd5c0d390eb4
