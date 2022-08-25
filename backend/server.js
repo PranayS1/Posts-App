@@ -7,12 +7,12 @@ const debug = require("debug")("node-angular");
 const normalizePort = val => {
     var port = parseInt(val, 10);
 
-    if(isNaN(port)){
+    if (isNaN(port)) {
         // named pipe
         return val;
     }
 
-    if(port >= 0){
+    if (port >= 0) {
         // port number
         return port;
     }
@@ -48,4 +48,4 @@ const server = http.createServer(app);
 server.on("error", onError);
 server.on("listening", onListening);
 server.listen(port); // server.listen(process.env.PortNumber) in case of prod
-console.log("Server is listeneing at 3000");
+console.log("Server is listeneing at " + port);
