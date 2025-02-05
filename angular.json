@@ -11,6 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "baseHref": "/Posts-App/",
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs",
