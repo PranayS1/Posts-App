@@ -10,8 +10,8 @@ var app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://Pranay:Lh5H1lXeiGbGda9n" +
-      // + process.env.MONGO_ATLAS_PW +
+    "mongodb+srv://Pranay:" +
+      +process.env.MONGO_ATLAS_PW +
       "@cluster0-ik25u.mongodb.net/node-angular?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
